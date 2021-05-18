@@ -20,7 +20,7 @@ export default function ImgMediaCard({
   getCurrencyBaseCcy,
 }) {
   let history = useHistory();
-  console.log('getCurrencyCcy', getCurrencyCcy[0]);
+  // console.log('getCurrencyCcy', getCurrencyCcy[0]);
   const firstObj = currencyOption[0];
   const getCurrencyBuy = firstObj && firstObj.buy.slice(0, 5);
   const getCurrencySale = firstObj && firstObj.sale.slice(0, 5);

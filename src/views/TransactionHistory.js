@@ -37,29 +37,14 @@ export default function TransactionHistory(params) {
   let test = [];
   test.push(parse, saleValue);
 
-  console.log(test);
+  // console.log(test);
   useEffect(() => {
     const getBuyFromStorage = JSON.parse(localStorage.getItem('amountBuy'));
     const getSaleFromStorage = JSON.parse(localStorage.getItem('amountSale'));
-
     setParse(getBuyFromStorage);
     setSaleValue(getSaleFromStorage);
   }, [setParse, setSaleValue]);
-
-  const buyData = () => {
-    const newData = {
-      id: uuidv4(),
-      buy: parse.amountBuy,
-      sale: parse.exchangeBuy,
-      date: date,
-    };
-    setBuyValue(state => [newData, ...state]);
-  };
-  const iD = uuidv4();
-  console.log('getBuyFromStorage', parse);
-
   const classes = useStyles();
-
   return (
     <>
       <BackButton />

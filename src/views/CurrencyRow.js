@@ -1,8 +1,7 @@
-import s from '../styles/CurrencyRow.module.css';
 import { v4 as uuidv4 } from 'uuid';
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import * as HomePageApi from '../services/ApiGenerator';
-import { Route, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import BackButton from './Button';
 import BtnHistory from './BtnHistory';
 export default function CurrencyRow() {
