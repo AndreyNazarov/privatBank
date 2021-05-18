@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+  background-color: #75af26;
+  height: 70px;
+  margin-top: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 25%;
+  padding: 0 40px;
+}
+
+.link {
+  color: #fff;
+  font-weight: 600;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 8%;
+  text-decoration: none;
+}
+.activeLink {
+  color: rgb(239, 255, 9);
+  font-weight: 600;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 8%;
+}
