@@ -7,7 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import BackButton from './Button';
+import { UploadButtons } from './Button';
 import s from '../styles/Currency.module.css';
 
 export default function ImgMediaCard({
@@ -23,7 +23,7 @@ export default function ImgMediaCard({
 
   return (
     <>
-      <BackButton />
+      <UploadButtons />
       <div className={s.container}>
         {currencyOption &&
           currencyOption.map(({ ccy, base_ccy, buy, sale }) => (

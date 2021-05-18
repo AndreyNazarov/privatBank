@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function UploadButtons() {
+export function UploadButtons() {
   let history = useHistory();
   const classes = useStyles();
 
@@ -30,3 +30,32 @@ export default function UploadButtons() {
     </div>
   );
 }
+
+export function PhotoButton() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <input
+        accept="image/*"
+        className={classes.input}
+        id="contained-button-file"
+        multiple
+        type="file"
+      />
+      <label htmlFor="contained-button-file">
+        <Button variant="contained" color="primary" component="span">
+          Upload transactions
+        </Button>
+      </label>
+      <input
+        accept="image/*"
+        className={classes.input}
+        id="icon-button-file"
+        type="file"
+      />
+    </div>
+  );
+}
+
+// export default { UploadButtons, PhotoButtons };

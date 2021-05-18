@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect, lazy, Suspense } from 'react';
-import BackButton from './Button';
+import { UploadButtons, PhotoButton } from './Button';
 import ls from 'local-storage';
 const useStyles = makeStyles({
   table: {
@@ -47,7 +47,7 @@ export default function TransactionHistory(params) {
   const classes = useStyles();
   return (
     <>
-      <BackButton />
+      <UploadButtons />
       <TableContainer component={Paper} className={classes.root}>
         <Table
           className={classes.table}
@@ -80,6 +80,8 @@ export default function TransactionHistory(params) {
           </TableBody>
         </Table>
       </TableContainer>{' '}
+      <hr />
+      <PhotoButton />
     </>
   );
 }

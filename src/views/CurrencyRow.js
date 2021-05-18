@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect } from 'react';
 import * as HomePageApi from '../services/ApiGenerator';
 import { useHistory } from 'react-router-dom';
-import BackButton from './Button';
+import { UploadButtons } from './Button';
 import BtnHistory from './BtnHistory';
 export default function CurrencyRow() {
   let history = useHistory();
@@ -69,7 +69,7 @@ export default function CurrencyRow() {
 
   return (
     <>
-      <BackButton />
+      <UploadButtons />
       <BtnHistory />
       <h2>Sale</h2>
       <div>
